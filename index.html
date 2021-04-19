@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Max22w</title>
+		<link href="favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap-grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css"/> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+<style>
+	.attention {
+		margin:0 auto;
+		width: 320px;
+		text-align: center;
+		padding: 1em 0;
+	}
+</style>
+<div class="bg-grey container-fluid">
+	<div class="attention">Этот сайт в процессе создания...</div>
+</div>
+<div class="about container">
+	<h1 class="about__header">Привет, я - Максим</h1>
+	<p class="about__decs">
+		Занимаюсь веб-разработкой, опыт более двух лет. Уверенные знания frontend с навыками бэкэнда. Могу верстать по макетам, внедрять любые JavaScript интеграции. Люблю освоение новых технологий и профессиональный рост, отношусь к проектам со всем вниманием
+	</p>
+</div>
+<!-- PREVIEWS of WORKS -->
+
+
+		<div class='bg-grey container-fluid'>
+			<div class='works container clearfix'>
+			    <div class='header'>НЕКОТОРЫЕ МОИ РАБОТЫ</div>
+			    <div class='desc'>по которым можно оценить качество услуг создания и улучшения сайтов</div>
+
+			    <a class='work wow fadeIn' data-wow-offset="50" onclick='event.preventDefault();openmodal("work7");'>
+			    	<img src="assets/content-images/preview7.jpg">
+			    	<div class='work-container'>
+			    		<div class='work-vertical'>
+			    			<div class='work-title'>Магазин косметики на WordPress</div>
+			    			<span class='work-button'>Посмотреть</span>
+			    		</div>
+			    	</div>
+			    </a>
+			    <a href='#' class='work wow fadeIn' data-wow-offset="50" data-wow-delay="0.15s" onclick='event.preventDefault();openmodal("work6");'>
+			    	<img src="assets/content-images/preview6.jpg">
+			    	<div class='work-container'>
+			    		<div class='work-vertical'>
+			    			<div class='work-title'>Лендинг по ремонту техники с гугл-картой</div>
+			    			<span class='work-button'>
+			    				Посмотреть
+			    			</span>
+			    		</div>
+			    	</div>
+			    </a>
+			    <a class='work wow fadeIn' data-wow-offset="50" data-wow-delay="0.45s" onclick='event.preventDefault();openmodal("work5");'>
+			    	<img src="assets/content-images/preview5.jpg">
+			    	<div class='work-container'>
+			    		<div class='work-vertical'>
+			    			<div class='work-title'>Лендинг доставки суши с корзиной</div>
+			    			<span class='work-button'>Посмотреть</span>
+			    		</div>
+			    	</div>
+			    </a>
+			    <div class='clearfix'></div>
+			</div>
+		</div>
+
+
+<!-- FULL WORKS (POPUP) -->
+
+        <div class='shadow' id='shadow'>
+            <div id='window' class='window'>
+                <div id='work7' class='window-block'>
+                	<div class='title'>
+                		<img  class="b-lazy" data-src="assets/content-images/work7.png">
+                	</div>
+                </div>
+                <div id='work6' class='window-block'>
+                	<div class='title'>
+                	    <img class="b-lazy" data-src="assets/content-images/work6.png">
+                    </div>
+                </div>
+                <div id='work5' class='window-block'>
+                	<div class='title'>
+                		<img class="b-lazy" data-src="assets/content-images/work5.png">
+                	</div>
+                </div>
+            </div>
+        </div>
+
+<!-- SCRIPTS -->
+		<!-- <script type="text/javascript" src="assets/vendors/js/wow.min.js"></script> -->
+		<script>
+        	new WOW({mobile: false}).init();
+        </script>
+        <script type="text/javascript" src="assets/js/my.js"></script>
+		<script type="text/javascript" src="assets/js/vendors/blazy.min.js"></script>
+		<script>
+		    var bLazy = new Blazy({loadInvisible: true});
+		</script>
+		<script src="//yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+	</body>
+</html>

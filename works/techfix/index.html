@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<style>
+		.sticky {
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="header__first-part">
+			<div class="header__first-part-content container">
+				<nav id="nav-main" role="navigation">
+				    <div class="menu-primary-navigation-container">
+				        <ul id="menu-primary-navigation" class="menu">
+				            <li><a href="">О нас</a></li>
+				            <li><a href="">Отзывы</a></li>
+				            <li><a href="">Советы по ремонту</a></li>
+				            <li><a href="">Акции</a></li>
+				            <li><a href="">Контакты</a></li>
+				        </ul><!-- #menu-primary-navigation -->
+				    </div><!-- .menu-primary-navigation-container -->
+				</nav><!-- #access -->
+				<div class="header__address">г. Киев, ул. Ушинского,4  ПН-ПТ с 10:00 до 20:00</div>
+			</div>
+		</div>
+		<div class="header__second-part" id="navbar">
+			<div class="header__menu-trigger">
+				<div class="header__three-lines" onclick="myFunction(this)">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<a href="" class="header__logo"></a>
+			<div class="header__services">
+				<div class="header__cancel-button"></div>
+				<nav id="nav-main" role="navigation">
+				    <div class="menu-primary-navigation-container">
+				        <ul id="menu-primary-navigation" class="menu">
+				            <li class="">
+				            	<a href="">Ремонт мобильных телефонов</a>
+				            	<ul class="sub-menu">
+				            		<li class="iphone"><a href="">Ремонт iPhone</a></li>
+				            		<li class="sony"><a href="">Ремонт телефонов Sony</a></li>
+				            		<li class="blackberry"><a href="">Ремонт телефонов Blackberry</a></li>
+				            		<li class="lenovo"><a href="">Ремонт телефонов Lenovo</a></li>
+				            		<li class="vivo"><a href="">Ремонт телефонов Vivo</a></li>
+				            		<li class="htc"><a href="">Ремонт HTC</a></li>
+				            		<li class="motorola"><a href="">Ремонт телефонов Motorola</a></li>
+				            		<li class="vertu"><a href="">Ремонт телефонов Vertu</a></li>
+				            		<li class="asus"><a href="">Ремонт телефонов Asus</a></li>
+				            		<li class="xiaomi"><a href="">Ремонт телефонов Xiaomi</a></li>
+				            		<li class="samsung"><a href="">Ремонт телефонов Samsung Galaxy</a></li>
+				            		<li class="lg"><a href="">Ремонт телефонов LG</a></li>
+				            		<li class="meizu"><a href="">Ремонт телефонов Meizu</a></li>
+				            		<li class="oneplus"><a href="">Ремонт телефонов OnePlus</a></li>
+				            		<li class="acer"><a href="">Ремонт телефонов Acer</a></li>
+				            		<li class="nokia"><a href="">Ремонт телефонов Nokia</a></li>
+				            		<li class="huawei"><a href="">Ремонт телефонов Huawei</a></li>
+				            		<li class="zte"><a href="">Ремонт телефонов ZTE</a></li>
+				            		<li class="google"><a href="">Ремонт телефонов Google</a></li>
+				            	</ul>
+				            </li>
+				            <li>
+				            	<a href="">Ремонт планшетов</a>
+				            </li>
+				        </ul><!-- #menu-primary-navigation -->
+				    </div><!-- .menu-primary-navigation-container -->
+				</nav><!-- #access -->
+			</div>
+			<div class="header__contacts">
+				<div class="header__phones-trigger"></div>
+				<ul class="header__phones">
+					<li><a href="tel:">+38 (066) 452-16-85</a></li>
+					<li><a href="tel:">+38 (099) 775-65-44</a></li>
+					<a href="" class="header__request-to-call">Записаться на ремонт</a>
+				</ul>
+			</div>
+		</div>
+		<div class="header__search">
+			<select name="" id="" class="header__select select">
+				<option disabled selected>Выберите устройство</option>
+				<option>телефон</option>
+				<option>планшет</option>
+			</select>
+			<select name="" id="" class="header__select select">
+				<option disabled selected>Выберите марку</option>
+			</select>
+			<select name="" id="" class="header__select select">
+				<option disabled selected>Выберите модель</option>
+			</select>
+			<div class="header__search-button button button--short button--light">
+				Найти
+			</div>
+		</div>
+	</header>
+	<div class="search-trigger container">
+		<button id="modal-btn-2" class="header__search-modal-trigger button button--wide button--transparent">Найти своё устройство</button>
+	</div>
+	<div class="promo-slider">
+		<!-- Slider main container -->
+		<div class="swiper-container">
+		  <!-- Additional required wrapper -->
+		  <div class="swiper-wrapper">
+		    <!-- Slides -->
+		    <div class="swiper-slide promo-slider__slide1">
+		    	<div class="slide1__text-content">
+		    		<div class="slide1__text">
+		    			<div class="slide1__title">Ремонт телефонов любой сложности</div>
+		    			<div class="slide1__decs">
+		    				Ваш любимый гаджет сломался? Вернем его к жизни в кратчайшие сроки и по доступной цене!
+		    			</div>
+		    		</div>
+		    		<div class="button button--wide slide1__button">Записаться на ремонт</div>
+		    	</div>
+		    	<div class="slide1__visual-content">
+		    		<div class="slide1__image"></div>
+		    	</div>
+		    </div>
+		    <div class="swiper-slide">Slide 2</div>
+		    <div class="swiper-slide">Slide 3</div>
+		    ...
+		  </div>
+
+		  <div class="swiper-pagination"></div><!-- If we need pagination -->
+		</div>
+	</div>
+	<div class="container request-button">
+		<button id="modal-btn-1" class="button button--wide">Записаться на ремонт</button>
+	</div>
+	<div class="container-fluid">
+		<div class="steps container">
+			<div class="steps__title title-1">Ремонт вашего гаджета всего за 3 шага</div>
+			<ol class="steps__list">
+				<li class="steps__item">
+					<img src="assets/img/step1.png" alt="" class="steps__item-pic">
+					<div class="steps__item-name">Укажите устройство, которое нужно отремонтировать</div>
+				</li>
+				<li class="steps__item">
+					<img src="assets/img/step2.png" alt="" class="steps__item-pic">
+					<div class="steps__item-name">Запишитесь на ремонт в StоpNFix в удобное для вас время, мастер будет вас ждать</div>
+				</li>
+				<li class="steps__item">
+					<img src="assets/img/step3.png" alt="" class="steps__item-pic">
+					<div class="steps__item-name">После диагностики гаджет будет отремонтирован в кратчайшие сроки</div>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<div class="advantages container">
+		<div class="advantages__title title-1">Наши преимущества</div>
+		<div class="advantages__desc text-1">Сотни клиентов ежедневно выбирают StopNFix</div>
+		<div class="advantages__list">
+			<div class="advantages__item">
+				<div class="advantages__pic">
+					<img src="assets/img/adv1.png" alt="преимущество 1" class="advantages__img">
+				</div>
+				<div class="advantages__item-name">Гибкие цены и бесплатная доставка</div>
+			</div>
+			<div class="advantages__item">
+				<div class="advantages__pic">
+					<img src="assets/img/adv2.png" alt="преимущество 1" class="advantages__img">
+				</div>
+				<div class="advantages__item-name">Целый склад запасных частей в наличии</div>
+			</div>
+			<div class="advantages__item">
+				<div class="advantages__pic">
+					<img src="assets/img/adv3.png" alt="преимущество 1" class="advantages__img">
+				</div>
+				<div class="advantages__item-name">Самый быстрый ремонт в Киеве</div>
+			</div>
+			<div class="advantages__item">
+				<div class="advantages__pic">
+					<img src="assets/img/adv4.png" alt="преимущество 1" class="advantages__img">
+				</div>
+				<div class="advantages__item-name">Даем гарантию на свою работу</div>
+			</div>
+		</div>
+		<div class="advantages__buttons">
+				<a href="" class="button button--wide">записаться на ремонт</a>
+				<a href="" class="button button--transparent button--wide">узнать стоимость</a>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="posts container">
+			<div class="tabs">
+				<div class="tabs__linklist">
+					<span class="tabs__link active" onclick="openTab(event, '1postslide')">Акции</span>
+					<span class="tabs__link" onclick="openTab(event, '2postslide')">Новости блога</span>
+				</div>
+				<div class="tabs__contentlist">
+					<div class="tabs__content active" id="1postslide">
+						<div class="postlist">
+							<a class="post-preview">
+								<div class="post-preview__image" style="background-image: url('assets/img/disc1.jpg');"></div>
+								<div class="post-preview__title">
+									Скидка на ремонт второго телефона -20%
+								</div>
+							</a>
+							<a class="post-preview">
+								<div class="post-preview__image" style="background-image: url('assets/img/disc2.jpg');"></div>
+								<div class="post-preview__title">
+									Новогодняя акция на ремонт мобильных телефонов!
+								</div>
+							</a>
+							<a class="post-preview">
+								<div class="post-preview__image" style="background-image: url('assets/img/disc3.jpg');"></div>
+								<div class="post-preview__title">
+									Диагностика планшета в подарок!
+								</div>
+							</a>
+						</div>
+						<a class="postlist__morebutton button button--short">Все акции</a>
+					</div>
+					<div class="tabs__content" id="2postslide">
+						<div class="postlist">
+							<a class="post-preview">
+								<div class="post-preview__image" style="background-image: url('assets/img/disc1.jpg');"></div>
+								<div class="post-preview__title">
+									Post 4: Lorem ipsum dolor sit, amet consectetur.	
+								</div>
+							</a>
+							<a class="post-preview">
+								<div class="post-preview__image" style="background-image: url('assets/img/disc2.jpg');"></div>
+								<div class="post-preview__title">
+									Post 5: Lorem, ipsum dolor sit amet!
+								</div>
+							</a>
+							<a class="post-preview">
+								<div class="post-preview__image" style="background-image: url('assets/img/disc3.jpg');"></div>
+								<div class="post-preview__title">
+									Post 6: Lorem, ipsum, dolor!
+								</div>
+							</a>
+						</div>
+						<a class="postlist__morebutton button button--short">Все акции</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="location">
+		<div class="location__title title-2">Как нас найти</div>
+		<div class="location__map">
+			<div id="map" style="height: 400px;"></div>
+		</div>
+	</div>
+	
+	<div class="seo-text container">
+		<div class="spoiler">
+			<div class="spoiler__content spoiler__content--hidden">
+				<p>
+					Современную жизнь практически невозможно представить себе без использования мобильных устройств - смартфоны помогают находить нужную информацию, служат средством связи и являются своеобразным.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dicta, dolorum? Commodi, laudantium aspernatur excepturi sequi ex esse fugiat eaque illum debitis quisquam sed numquam facilis eius sit vel ducimus exercitationem neque tempore, rerum natus fugit illo! Necessitatibus atque quo veritatis vitae earum et commodi dolore, qui optio a, est deserunt. Repudiandae repellat, laboriosam accusamus officia odio fugit tempore et iusto excepturi, quis dolores! Delectus voluptatibus tempora consequuntur dolorem corporis reprehenderit ea commodi, temporibus nihil est accusamus rerum illum incidunt velit non optio. Consectetur odio, repellendus deserunt deleniti unde doloremque reiciendis aliquam ducimus mollitia pariatur ipsam laborum. Necessitatibus, nulla cupiditate fugit?
+				</p>
+			</div>
+			<div onClick="toggleSpoiler()" class="spoiler__button spoiler__button--hidden"></div>
+		</div>
+	</div>
+	<div class="cta__buttons container">
+			<a href="" class="button button--wide">записаться на ремонт</a>
+			<a href="" class="button button--transparent button--wide">узнать стоимость</a>
+	</div>
+	<footer class="footer">
+		<div class="footer__content container">
+			<div class="footer__col">
+				<a href="" class="footer__logo"></a>
+				<div class="footer__contacts">
+					<div class="footer__email"><a href="" class="footer__email-content">info@stopnfix.com</a></div>
+					<div class="footer__loc">г. Киев, улица Ушинского, 4</div>
+					<div class="footer__voice-contacts">
+						<ul class="footer__phones">
+							<li>+38 (066) 452-16-85</li>
+							<li>+38 (099) 775-65-44</li>
+							<a href="" class="footer__request-to-call">Заказать звонок с сайта</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__col footer__info">
+				<div class="footer__heading">Информация</div>
+				<div class="footer__nav">
+					<nav id="nav-main" role="navigation">
+					    <div class="menu-primary-navigation-container">
+					        <ul id="menu-primary-navigation" class="menu">
+					            <li><a href="">Акции</a></li>
+					            <li><a href="">Советы по ремонту</a></li>
+					            <li><a href="">О компании</a></li>
+					            <li><a href="">Отзывы</a></li>
+					            <li><a href="">Контакты</a></li>
+					        </ul><!-- #menu-primary-navigation -->
+					    </div><!-- .menu-primary-navigation-container -->
+					</nav><!-- #access -->
+				</div>
+			</div>
+			<div class="footer__col">
+				<div class="footer__services">
+					<div class="footer__heading">Услуги</div>
+					<div class="footer__nav">
+						<nav id="nav-main" role="navigation">
+						    <div class="menu-primary-navigation-container">
+						        <ul id="menu-primary-navigation" class="menu">
+						            <li><a href="">Ремонт мобильных телефонов</a></li>
+						            <li><a href="">Ремонт планшетов</a></li>
+						        </ul><!-- #menu-primary-navigation -->
+						    </div><!-- .menu-primary-navigation-container -->
+						</nav><!-- #access -->
+					</div>
+				</div>
+				<div class="footer__socials">
+					<a href="" class="footer__social-icon footer__social-icon--vk"></a>
+					<a href="" class="footer__social-icon footer__social-icon--twitter"></a>
+					<a href="" class="footer__social-icon footer__social-icon--instagram"></a>
+					<a href="" class="footer__social-icon footer__social-icon--facebook"></a>
+				</div>
+			</div>
+			<div class="footer__copyright">© Сервис по ремонту StopNFix. 2020.</div>
+		</div>
+	</footer>
+
+	<div id="modal-1" class="modal-bg">
+
+	  <!-- Modal content -->
+	  <div class="modal">
+	    <div class="modal__cross close"></div>
+	    <div class="modal__wrapper">
+	    	<span class="modal__header">Введите Ваши контактные данные</span>
+	    	<form class="modal__content">
+	    		<div class="modal__input-group">
+	    			<label for="name" class="textarea-label">Ваше имя*</label>
+	    			<input class="textarea" type="text" name="name" placeholder="Ваше имя">
+	    		</div>
+	    		<div class="modal__input-group">
+	    			<label for="phone-number" class="textarea-label">Ваш телефон: *</label>
+	    			<input class="textarea" type="tel" name="phone-number" placeholder="(0__)-___-__-__">
+	    		</div>
+	    		<button class="button button--wide">Записаться на ремонт</button>
+	    	</form>
+	    </div>
+	  </div>
+
+	</div>
+	<div id="modal-2" class="modal-bg">
+
+	  <!-- Modal content -->
+		<div class="modal2">
+			<span class="modal2__cross close"></span>
+			<div class="modal__wrapper">
+				<div class="modal2__content">
+					<select name="" id="" class="modal__select select">
+						<option disabled selected>Выберите устройство</option>
+						<option>телефон</option>
+						<option>планшет</option>
+					</select>
+					<select name="" id="" class="modal__select select">
+						<option disabled selected>Выберите марку</option>
+					</select>
+					<select name="" id="" class="modal__select select">
+						<option disabled selected>Выберите модель</option>
+					</select>
+					<div class="modal__search-button button button--short button--light">
+						Найти
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function myFunction(x) {
+		  x.classList.toggle("header__three-lines--opened");
+		}
+	</script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript">
+		const swiper = new Swiper('.swiper-container', {
+		  direction: 'horizontal',
+		  loop: true,
+		  pagination: {
+		    el: '.swiper-pagination',
+		    clickable: true,
+		  },
+		});
+	</script>
+	<script>
+		function openTab(evt, contentId) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabs__content");
+			for (i = 0; i < tabcontent.length; i++) {
+				// if (tabcontent[i].classList.contains('active')) {
+	    			tabcontent[i].classList.remove("active");
+				// }
+			}
+			tablinks = document.getElementsByClassName("tabs__link");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].classList.remove("active");
+			}
+			document.getElementById(contentId).classList.add("active");
+			evt.currentTarget.classList.add("active");
+		}
+	</script>
+	<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+	<script
+	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD17q8sWzioPXEUsV2-su6ArtOzxv7xuc&callback=initMap&libraries=&v=weekly"
+	  async
+	></script>
+	<script>
+		let map;
+		function initMap() {
+			const uluru = { lat: 50.436, lng: 30.450 };
+			const stylesArray = [
+			    {
+			        "elementType": "labels.text.stroke",
+			        "stylers": [
+			            {
+			                "visibility": "on"
+			            },
+			            {
+			                "color": "#ffffff"
+			            },
+			            {
+			                "lightness": 16
+			            }
+			        ]
+			    },
+			    {
+			        "elementType": "labels.text.fill",
+			        "stylers": [
+			            {
+			                "saturation": 36
+			            },
+			            {
+			                "color": "#333333"
+			            },
+			            {
+			                "lightness": 40
+			            }
+			        ]
+			    },
+			    {
+			        "elementType": "labels.icon",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    }
+			];
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 17,
+				center: uluru,
+				// mapTypeId: 'terrain',
+				styles: stylesArray
+			});
+			const marker = new google.maps.Marker({
+				position: uluru,
+				map: map,
+				icon: {
+					url: "assets/img/map-icon.svg",
+					scaledSize: new google.maps.Size(62, 62)
+				}
+			});
+		}
+	</script>
+	<script>
+	    function toggleSpoiler() {
+	        var chatBlock = document.querySelector(".spoiler__content");
+	        var arrows = document.querySelector(".spoiler__button");
+	        chatBlock.classList.toggle('spoiler__content--hidden');
+	        arrows.classList.toggle('spoiler__button--hidden');
+	    }
+	</script>
+	<!-- <script>
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky");
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		}
+	</script> -->
+	<script>
+	function openModal(modalId, btnId) {
+		var modal = document.getElementById(modalId);
+		document.getElementById(btnId).onclick = function() {
+	  		modal.style.display = "block";
+		}
+		modal.getElementsByClassName("close")[0].onclick = function() {
+	  		modal.style.display = "none";
+		}
+		window.addEventListener("click", closeModal);
+		function closeModal (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	}
+	openModal("modal-1","modal-btn-1");
+	openModal("modal-2","modal-btn-2");
+	</script>
+</body>
+</html>
